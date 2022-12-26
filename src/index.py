@@ -11,8 +11,8 @@ with open('config.json') as f:
     data = json.load(f)
 
 intents = discord.Intents.all()
-token = data[token]
-prefix = data[prefix]
+token = data["token"]
+prefix = data["prefix"]
 bot = commands.Bot(command_prefix=prefix, intents=intents)
 
 @bot.command()
